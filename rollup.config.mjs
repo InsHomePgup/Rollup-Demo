@@ -5,7 +5,10 @@ export default {
     input: 'src/main.ts',
     output: {
         dir: 'dist',
-        format: 'es'
+        format: 'cjs'
+    },
+    manualChunks:{
+
     },
     plugins: [
         json({}),
