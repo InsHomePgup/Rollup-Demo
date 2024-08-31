@@ -13,9 +13,11 @@ comm.comm.abc();
  * Dynamic Import: Import modules using the dynamic import API.
  * This is useful for code-splitting applications and using modules on-the-fly.
  */
-import('./Dynamic.ts').then((module)=>{
-    console.log("export module",module)
-})
+// const importDynamic = new Promise((resolve,reject)=>{
+//     import('./Dynamic.ts').then((module)=>{
+//         console.log("export module",module)
+//     })
+// })
 
 /**
  * Is import value can change?
@@ -28,5 +30,10 @@ console.log(count)
 // count++;  // It was error  : TS2632: Cannot assign to count because it is an import.
 
 
+
 // @ts-ignore
 // console.log(Demo.myName,version,testName)
+
+import {Color} from "./TsDemo/Enum.ts";
+console.log(Color[0])
+
