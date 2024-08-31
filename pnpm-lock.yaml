@@ -13,10 +13,16 @@ importers:
         version: 6.1.0(rollup@4.19.1)
       '@rollup/plugin-typescript':
         specifier: ^11.1.6
-        version: 11.1.6(rollup@4.19.1)(typescript@5.5.4)
+        version: 11.1.6(rollup@4.19.1)(tslib@2.7.0)(typescript@5.5.4)
       rollup:
         specifier: ^4.19.0
         version: 4.19.1
+      tslib:
+        specifier: ^2.7.0
+        version: 2.7.0
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
 
 packages:
 
@@ -173,6 +179,9 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
+  tslib@2.7.0:
+    resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
+
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
     engines: {node: '>=14.17'}
@@ -186,13 +195,14 @@ snapshots:
     optionalDependencies:
       rollup: 4.19.1
 
-  '@rollup/plugin-typescript@11.1.6(rollup@4.19.1)(typescript@5.5.4)':
+  '@rollup/plugin-typescript@11.1.6(rollup@4.19.1)(tslib@2.7.0)(typescript@5.5.4)':
     dependencies:
       '@rollup/pluginutils': 5.1.0(rollup@4.19.1)
       resolve: 1.22.8
       typescript: 5.5.4
     optionalDependencies:
       rollup: 4.19.1
+      tslib: 2.7.0
 
   '@rollup/pluginutils@5.1.0(rollup@4.19.1)':
     dependencies:
@@ -300,5 +310,7 @@ snapshots:
       fsevents: 2.3.3
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  tslib@2.7.0: {}
 
   typescript@5.5.4: {}
