@@ -15,5 +15,9 @@
     "rollup": "^4.19.0",
     "tslib": "^2.7.0",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "lodash-es": "^4.17.21"
   }
 }

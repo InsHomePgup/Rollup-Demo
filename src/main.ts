@@ -35,5 +35,7 @@ console.log(count)
 // console.log(Demo.myName,version,testName)
 
 import {Color} from "./TsDemo/Enum.ts";
-console.log(Color[0])
-
+import {random} from 'lodash-es'
+export function getRandomNum(min:number,max:number){
+    return random(min,max);
+}

@@ -4,6 +4,7 @@
     "moduleResolution": "Bundler",
     "resolvePackageJsonExports": true,
     "resolveJsonModule": true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "noEmit": true
   }
 }
